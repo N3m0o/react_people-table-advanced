@@ -19,11 +19,6 @@ export const PeoplePage = () => {
 
   let filtredPeople = [...peopleFromServer];
 
-  const noMatchingPeople =
-    !isLoading &&
-    !hasError &&
-    peopleFromServer.length > 0 &&
-    filtredPeople.length === 0;
 
   if (sex) {
     filtredPeople = filtredPeople.filter(person => person.sex === sex);
@@ -58,6 +53,11 @@ export const PeoplePage = () => {
       });
   }, []);
 
+  const noMatchingPeople =
+    !isLoading &&
+    !hasError &&
+    peopleFromServer.length > 0 &&
+    filtredPeople.length === 0;
   return (
     <>
       <h1 className="title">People Page</h1>
