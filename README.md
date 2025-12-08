@@ -1,31 +1,33 @@
-# React People Table (Advanced) - Filterging and Sorting
+# People Table — React Advanced Table App
 
-> Here is [the working example](https://mate-academy.github.io/react_people-table-advanced/)
+An advanced data-table application built with React.  
+It showcases table rendering, data management, and a clean UI approach — ideal for displaying and interacting with tabular data (e.g. user lists, records, data grids).
 
-> Sorting and filtering tests are not implemented yet
+## 🚀 Features
 
-Using code from the [React People Table](https://github.com/mate-academy/react_people-table-basics#react-people-table)
-implement the ability to filter and sort people in the table.
+- Display a list of people/data in tabular form  
+- Sorting, filtering, or searching (if implemented) — for easy data navigation  
+- Responsive and clean layout  
+- Reusable components and modular code structure  
+- Built with modern frontend tooling  
 
-1. All the filters and sort params should be saved as URL Search Params, so you could share the link to show exactly what you see.
-1. Keep search params when navigating within the `People` page (when selecting a person or clicking the `People` link).
-1. The sidebar with the filters should appear only when people are loaded.
-1. `NameFilter` should update the `query` search param with the text from the input.
-    - show only people with the `name`, `motherName` or `fatherName` that match the query case insensitive;
-    - if the input is empty there should not be `query` in the search params.
-1. `CenturyFilter` should allow to choose several centuries or all of them.
-    - add `centuries` search params using `append` method  `getAll` method;
-1. Implement sorting by `name`, `sex`, `born` and `died` by clicking on arrows in a `th`;
-    - the first click on a column sorts people by the selected field ascending (`a -> z` or `0 -> 9`);
-    - the second click (when people are already sorted ascending by this field) reverses the order of sorting;
-    - the third click (when people are already sorted in reversed order by this field) disables sorting;
-    - use `sort` search param to save sort field;
-    - add `order=desc` (short for `descending`) if sorted in reversed order;
-    - if sorting is disabled there should not be `sort` and `order` search params;
+## 🧰 Technologies Used
 
-## Instructions
-- Install Prettier Extention and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Use the [React TypeScript cheat sheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript).
-- Open one more terminal and run tests with `npm test` to ensure your solution is correct.
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_people-table-advanced/) and add it to the PR description.
+- React  
+- TypeScript (optional — if used) or JavaScript  
+- CSS / SCSS (or chosen styling)  
+- Table library or custom table implementation (e.g. using a table/grid solution)  
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js and npm (or yarn) installed  
+
+### Installation
+
+```bash
+git clone https://github.com/YourUsername/react_people-table-advanced.git
+cd react_people-table-advanced
+npm install
+npm run dev
